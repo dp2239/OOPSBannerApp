@@ -1,21 +1,34 @@
 /**
  * OOPSBannerApp
  *
- * Displays "OOPS" as a large ASCII banner using '*' characters.
+ * Displays "OOPS" banner using String.join() method.
  *
  * @author Dhara
- * @version 2.0
+ * @version 3.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(" *****    *****    *****    ***** ");
-        System.out.println("*     *  *     *  *     *  *     *");
-        System.out.println("*     *  *     *  *     *  *      ");
-        System.out.println("*     *  *     *  *     *   ***** ");
-        System.out.println("*     *  *     *  *     *        *");
-        System.out.println("*     *  *     *  *     *  *     *");
-        System.out.println(" *****    *****    *****    ***** ");
+        System.out.println(String.join("  ",
+                "*****", "*****", "*****", "*****"));
+
+        System.out.println(String.join("  ",
+                "*   *", "*   *", "*   *", "*   *"));
+
+        System.out.println(String.join("  ",
+                "*   *", "*   *", "*   *", "*"));
+
+        System.out.println(String.join("  ",
+                "*   *", "*   *", "*   *", "*****"));
+
+        System.out.println(String.join("  ",
+                "*   *", "*   *", "*   *", "    *"));
+
+        System.out.println(String.join("  ",
+                "*   *", "*   *", "*   *", "*   *"));
+
+        System.out.println(String.join("  ",
+                "*****", "*****", "*****", "*****"));
     }
 }
